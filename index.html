@@ -8,10 +8,10 @@
 </head>
 <body>
   <header>
-    <h1>Destino Cordillera</h1>
     <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
+      <a href="index.html" class="logo">Destino Cordillera</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Inicio</a></li>
         <li><a href="pagina1.html">Panoramas</a></li>
         <li><a href="pagina2.html">Alojamiento y Gastronomía</a></li>
         <li><a href="pagina3.html">Reserva y Contacto</a></li>
@@ -20,14 +20,46 @@
   </header>
 
   <main>
-    <section>
-      <h2>Bienvenido a Destino Cordillera</h2>
-      <p>Explora nuestras rutas, naturaleza y gastronomía local.</p>
+    <section class="hero">
+      <h1>Bosques Nativos y Rutas Andinas</h1>
+      <p>Descubre senderos milenarios, aire puro de montaña y la tranquilidad del bosque cordillerano.</p>
+      <div>
+        <a href="pagina1.html" class="btn">Explorar Panoramas</a>
+        <a href="pagina3.html" class="btn btn-secondary">Reservar Estadía</a>
+      </div>
     </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2026 Destino Cordillera - Todos los derechos reservados.</p>
-  </footer>
+    <h2 class="section-title">Vive la Cordillera</h2>
+    <p class="section-subtitle">Tres maneras de adentrarte en nuestro entorno natural protegido</p>
+
+    <div class="cards-grid">
+      <article class="card">
+        <div class="card-content">
+          <span class="card-tag">Aventura</span>
+          <h3>Senderos y Naturaleza</h3>
+          <p>Rutas señalizadas entre alerces y coihues para todos los niveles de preparación física.</p>
+          <a href="pagina1.html" class="btn">Ver Rutas</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-content">
+          <span class="card-tag">Descanso</span>
+          <h3>Cabañas y Refugios</h3>
+          <p>Alojamientos sustentables equipados para descansar con vistas al cordón montañoso.</p>
+          <a href="pagina2.html" class="btn">Ver Opciones</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-content">
+          <span class="card-tag">Servicio</span>
+          <h3>Planifica tu Llegada</h3>
+          <p>Consulta cupos, registra tu ingreso a los parques y contacta a guías certificados.</p>
+          <a href="pagina3.html" class="btn">Ir a Reserva</a>
+        </div>
+      </article>
+    </div>
+  </main>
 </body>
 </html>
