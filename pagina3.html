@@ -23,58 +23,56 @@
         <h1 class="section-title">Reserva y Contacto</h1>
         <p class="section-subtitle">Cotiza tu próxima aventura o comunícate con nosotros</p>
 
-        <!-- Contenedor grid principal -->
-        <div class="cards-grid">
+        <!-- Usando el layout de formulario del CSS -->
+        <div class="form-layout">
             
-            <!-- Tarjeta de formulario de contacto -->
-            <article class="card">
-                <div class="card-content">
-                    <h3>Envíanos tu Solicitud</h3>
-                    <br>
-                    <form action="#" method="POST">
-                        <p><label for="nombre"><strong>Nombre completo:</strong></label><br>
-                        <input type="text" id="nombre" name="nombre" required style="width: 100%; padding: 8px; margin-top: 5px;"></p>
+            <!-- Caja del formulario -->
+            <div class="form-box">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
 
-                        <p><label for="email"><strong>Correo electrónico:</strong></label><br>
-                        <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; margin-top: 5px;"></p>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
 
-                        <p><label for="actividad"><strong>Servicio de interés:</strong></label><br>
-                        <select id="actividad" name="actividad" style="width: 100%; padding: 8px; margin-top: 5px;">
+                    <div class="form-group">
+                        <label for="actividad">Servicio de interés:</label>
+                        <select id="actividad" name="actividad">
                             <option value="alojamiento">Alojamiento (Cabaña/Hotel)</option>
                             <option value="camping">Sitio de Camping</option>
                             <option value="excursion">Trekking / Excursión</option>
                             <option value="otro">Otra consulta general</option>
-                        </select></p>
+                        </select>
+                    </div>
 
-                        <p><label for="mensaje"><strong>Mensaje o detalles:</strong></label><br>
-                        <textarea id="mensaje" name="mensaje" rows="4" required style="width: 100%; padding: 8px; margin-top: 5px;"></textarea></p>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje o detalles:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    </div>
 
-                        <!-- Boton de envio -->
-                        <button type="submit" class="btn" style="border: none; cursor: pointer; width: 100%; margin-top: 10px;">Enviar Solicitud</button>
-                    </form>
-                </div>
-            </article>
+                    <button type="submit" class="btn">Enviar Solicitud</button>
+                </form>
+            </div>
 
-            <!-- Tarjeta de informacion de ubicacion -->
-            <article class="card">
-                <div class="card-content">
-                    <h3>Datos de Contacto</h3>
-                    <br>
-                    <p><strong>📍 Dirección:</strong><br>
-                    Camino a la Montaña km 15, Sector Los Nevados, Destino Cordillera.</p>
-                    <br>
-                    <p><strong>📞 Teléfono:</strong><br>
-                    +56 9 1234 5678</p>
-                    <br>
-                    <p><strong>✉️ Correo Electrónico:</strong><br>
-                    reservas@destinocordillera.cl</p>
-                    <br>
-                    <p><strong>🕒 Horario de Atención:</strong><br>
-                    Lunes a Domingo de 08:00 a 20:00 hrs.</p>
-                </div>
-            </article>
+            <!-- Caja de informacion de contacto -->
+            <div class="contact-info">
+                <h3>Datos de Contacto</h3>
+                <p><strong>📍 Dirección:</strong><br>Camino a la Montaña km 15, Sector Los Nevados.</p>
+                <p><strong>📞 Teléfono:</strong><br>+56 9 1234 5678</p>
+                <p><strong>✉️ Correo:</strong><br>reservas@destinocordillera.cl</p>
+                <p><strong>🕒 Horario:</strong><br>Lunes a Domingo de 08:00 a 20:00 hrs.</p>
+            </div>
 
         </div>
     </main>
+
+    <!-- Footer limpio usando la clase del CSS -->
+    <footer>
+        <p>&copy; 2026 Destino Cordillera. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
