@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destino Cordillera - Reserva y Contacto</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Destino Cordillera</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pagina1.html">Panoramas</a></li>
+                <li><a href="pagina2.html">Alojamiento y Gastronomía</a></li>
+                <li><a href="pagina3.html" class="active">Reserva y Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="section-title">Reserva y Contacto</h1>
+        <p class="section-subtitle">Cotiza tu próxima aventura o comunícate con nosotros</p>
+
+        <!-- Usamos la misma grilla de tarjetas de tu compañero para que el formulario y el contacto se vean iguales al resto del sitio -->
+        <div class="cards-grid">
+            
+            <!-- Tarjeta 1: El Formulario -->
+            <article class="card">
+                <div class="card-content">
+                    <h3>Envíanos tu Solicitud</h3>
+                    <br>
+                    <form action="#" method="POST">
+                        <p><label for="nombre"><strong>Nombre completo:</strong></label><br>
+                        <input type="text" id="nombre" name="nombre" required style="width: 100%; padding: 8px; margin-top: 5px;"></p>
+
+                        <p><label for="email"><strong>Correo electrónico:</strong></label><br>
+                        <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; margin-top: 5px;"></p>
+
+                        <p><label for="actividad"><strong>Servicio de interés:</strong></label><br>
+                        <select id="actividad" name="actividad" style="width: 100%; padding: 8px; margin-top: 5px;">
+                            <option value="alojamiento">Alojamiento (Cabaña/Hotel)</option>
+                            <option value="camping">Sitio de Camping</option>
+                            <option value="excursion">Trekking / Excursión</option>
+                            <option value="otro">Otra consulta general</option>
+                        </select></p>
+
+                        <p><label for="mensaje"><strong>Mensaje o detalles:</strong></label><br>
+                        <textarea id="mensaje" name="mensaje" rows="4" required style="width: 100%; padding: 8px; margin-top: 5px;"></textarea></p>
+
+                        <!-- Usamos la clase "btn" de tu compañero para que el botón sea idéntico -->
+                        <button type="submit" class="btn" style="border: none; cursor: pointer; width: 100%; margin-top: 10px;">Enviar Solicitud</button>
+                    </form>
+                </div>
+            </article>
+
+            <!-- Tarjeta 2: Datos de Contacto -->
+            <article class="card">
+                <div class="card-content">
+                    <h3>Datos de Contacto</h3>
+                    <br>
+                    <p><strong>📍 Dirección:</strong><br>
+                    Camino a la Montaña km 15, Sector Los Nevados, Destino Cordillera.</p>
+                    <br>
+                    <p><strong>📞 Teléfono:</strong><br>
+                    +56 9 1234 5678</p>
+                    <br>
+                    <p><strong>✉️ Correo Electrónico:</strong><br>
+                    reservas@destinocordillera.cl</p>
+                    <br>
+                    <p><strong>🕒 Horario de Atención:</strong><br>
+                    Lunes a Domingo de 08:00 a 20:00 hrs.</p>
+                </div>
+            </article>
+
+        </div>
+    </main>
+</body>
+</html>
+
