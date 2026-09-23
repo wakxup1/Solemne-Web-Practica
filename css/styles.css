@@ -295,6 +295,10 @@ footer {
   margin-top: auto;
 }
 
+.espacio-arriba {
+    margin-top: 60px;
+}
+
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
